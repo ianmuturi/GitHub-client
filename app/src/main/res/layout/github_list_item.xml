@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:theme="@style/AppTheme"
+    android:gravity="bottom|clip_horizontal|center|start|clip_vertical|center_horizontal|right|fill|fill_horizontal|top|left|center_vertical|fill_vertical|end">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+
+        <TableRow android:measureWithLargestChild="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp">
+
+        </TableRow>
+        <TableRow>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow>
+
+
+        </TableRow>
+        <TableRow>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Name"
+        android:id="@+id/name_title"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#010101" />
+
+    <TextView
+        android:id="@+id/name"
+        android:padding="3dip"
+        android:layout_column="47"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="GitHub Profile"
+        android:id="@+id/profile_title"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#010101" />
+
+    <TextView
+        android:id="@+id/html_url"
+        android:padding="3dip"
+        android:layout_column="40"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#172cff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Followers"
+        android:id="@+id/followers_title"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#010101" />
+
+    <TextView
+        android:id="@+id/followers"
+        android:padding="3dip"
+        android:layout_column="40"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/avatar_url"
+            android:layout_height="330dp"
+            android:layout_width="384dp"
+            android:visibility="visible"
+            android:theme="@style/Base.ThemeOverlay.AppCompat"
+            android:layout_column="33"
+            android:layout_gravity="center"
+            android:background="#02edd9ff" />
+    </FrameLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share Profile"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
